@@ -11,7 +11,12 @@ Calificación_3 = float(input("3ra Calificación:"))
 
 #Proceso
 
-Promedio = (Calificación_1 + Calificación_2 + Calificación_3)/3
+Promedio = float(round((Calificación_1 + Calificación_2 + Calificación_3)/3,2))
+if (Promedio>=6):
+    print("Aprobado")
+elif(Promedio<6):
+    print("Reprobado")
+
 
 
 #Salida de datos
